@@ -19,7 +19,7 @@ class RestaurantsController < ApplicationController
 
 # define which params we are going to allow us to pass to controller
   def restaurant_params
-    params.require(:restaurant).permit(:name)
+    params.require(:restaurant).permit(:name, :image)
   end
 
   def show
